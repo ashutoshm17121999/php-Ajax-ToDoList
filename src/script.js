@@ -106,7 +106,7 @@ function displayTodo(myData){
 function displayComplete(myData){
     var text="";
     for(i=0;i<myData.length;i++){
-        text += '<li><input type="checkbox" checked name="check"><label>'+myData[i]+'</label><input type="text"><button id="edit1" data-i='+i+' name="editBtn" class="edit">Edit</button><button id="delete1" data-index1='+i+' class="delete" name="deleteBtn">Delete</button></li><input type="text" hidden name="myVal" value="'+i+'">';
+        text += '<li><input type="checkbox" checked name="check"><label>'+myData[i]+'</label><input type="text"><button id="delete1" data-index1='+i+' class="delete" name="deleteBtn">Delete</button></li><input type="text" hidden name="myVal" value="'+i+'">';
     }
     $('#completed-tasks').html(text);
 }
